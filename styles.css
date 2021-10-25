@@ -1,0 +1,112 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    background: rgb(228, 228, 228);
+}
+
+.container {
+    height: auto;
+    width: 100vw;
+    background: rgb(228, 228, 228);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+
+.search {
+    position: absolute;
+    left: 0;
+    width: 30%;
+    height: 250px;
+    margin: 20px 0;
+    background: rgb(45, 206, 139);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search input {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search .name-search {
+    width: 50%;
+}
+
+.search .search-btn {
+    width: 20%;
+    background: rgb(255, 255, 255);
+    transition: background 0.5s ease;
+}
+
+.search .search-btn:hover {
+    background: rgb(212, 212, 212);
+}
+
+/* CARDS */
+.cards {
+    width: 50%;
+    background:inherit;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card {
+    height: 250px;
+    width: 70%;
+    margin: 20px 0;
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.39);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card .img img {
+    height: 200px;
+    width: auto;
+    border-radius: 6px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.39);
+
+}
+
+.card .info {
+    color: rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .info .name {
+    font-weight: 700;
+    font-size: 20px;
+
+    border-bottom: 2px solid rgb(45, 206, 139);
+}
+
+
